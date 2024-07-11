@@ -10,448 +10,228 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Revolve - Personal Magazine blog Template</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Rizal’s Education from Elementary to College</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- theme meta -->
-	<meta name="theme-name" content="revolve" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-	<!--Favicon-->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-	<!-- THEME CSS
-	================================================== -->
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-	<!-- Themify -->
-	<link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
-	<link rel="stylesheet" href="plugins/slick-carousel/slick.css">
-	<!-- Slick Carousel -->
-	<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
-	<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-	<!-- manin stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- THEME CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Themify -->
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom CSS -->
+    <style>
+        .navbar {
+            background-color: #1b1b1b; /* Change this color to your desired navbar color */
+            font-family: 'EB Garamond', serif; /* Apply Garamond font to the navbar */
+        }
+        .navbar .nav-link {
+            color: white; /* Change this color to your desired link color */
+        }
+        .navbar .nav-link:hover {
+            color: #d3d3d3; /* Change this color to your desired link hover color */
+        }
+        .header-logo {
+            background-color: #1b1b1b; /* Change this color to match the navbar color */
+            font-family: 'EB Garamond', serif; /* Apply Garamond font to the header logo */
+        }
+        .header-logo a {
+            color: white; /* Change this color to your desired logo text color */
+            font-size: 2rem; /* Change this value to adjust the font size of the logo text */
+        }
+        body {
+            background-image: url('images/BG.png'); /* Change this to the path of your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Optional: Keeps the background image fixed when scrolling */
+            font-family: 'EB Garamond', serif; /* Apply Garamond font to the body */
+            color: #333333; /* Change this color to your desired body text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #000000; /* Change this color to your desired heading text color */
+        }
+        p {
+            color: #131313; /* Change this color to your desired paragraph text color */
+        }
+        .post-meta span {
+            color: #464646; /* Change this color to your desired post meta text color */
+        }
+        a {
+            color: #0066cc; /* Change this color to your desired link color */
+        }
+        a:hover {
+            color: #747474; /* Change this color to your desired link hover color */
+        }
+        blockquote {
+            color: #444444; /* Change this color to your desired blockquote text color */
+        }
+    </style>
 </head>
 
 <body>
 
-	<header class="header-top bg-grey justify-content-center">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-2 col-md-4 text-center d-none d-lg-block">
-					<a class="navbar-brand " href="index.html">
-						<img src="images/logo.png" alt="" class="img-fluid">
-					</a>
-				</div>
+    <div class="header-logo py-5 d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <a class="navbar-brand" href="index.html">Rizal’s Education from Elementary to College</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				<div class="col-lg-8 col-md-12">
-					<nav class="navbar navbar-expand-lg navigation-2 navigation">
-						<a class="navbar-brand text-uppercase d-lg-none" href="#">
-							<img src="images/logo.png" alt="" class="img-fluid">
-						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
-							aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="ti-menu"></span>
-						</button>
+    <header class="header-top bg-grey justify-content-center">
+        <nav class="navbar navbar-expand-lg navigation">
+            <div class="container">
+                <a class="navbar-brand d-lg-none" href="index.html">Rizal’s Education</a>
 
-						<div class="collapse navbar-collapse" id="navbar-collapse">
-							<ul id="menu" class="menu navbar-nav mx-auto">
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Home
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="index.html">Home 1</a>
-										<a class="dropdown-item" href="index-2.html">Home 2</a>
-										<a class="dropdown-item" href="index-3.html">Home 3</a>
-										<a class="dropdown-item" href="index-4.html">Home 4</a>
-										<a class="dropdown-item" href="index-5.html">Home 5</a>
-										<a class="dropdown-item" href="index-6.html">Home 6</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Blog Posts
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-										<a class="dropdown-item" href="standard-fullwidth.html">Standard Fullwidth</a>
-										<a class="dropdown-item" href="standard-left-sidebar.html">Standard Left Sidebar</a>
-										<a class="dropdown-item" href="standard-right-sidebar.html">Standard Right Sidebar</a>
-									</div>
-								</li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul id="menu" class="menu navbar-nav ">
+                        <li class="nav-item dropdown  pl-0">
+                        </li>
+                    </ul>
+                </div>
 
-								<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-								<li class="nav-item"><a href="fashion.html" class="nav-link">Category</a></li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Post Format
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-										<a class="dropdown-item" href="post-video.html">Video Formats</a>
-										<a class="dropdown-item" href="post-audio.html">Audio Format</a>
-										<a class="dropdown-item" href="post-link.html">Quote Format</a>
-										<a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
-										<a class="dropdown-item" href="post-image.html">Image Format</a>
-									</div>
-								</li>
+            </div>
+        </nav>
+    </header>
 
-								<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-							</ul>
+    <!--search overlay start-->
+    <div class="search-wrap">
+        <div class="overlay">
+            <form action="#" class="search-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-9">
+                            <input type="text" class="form-control" placeholder="Search..." />
+                        </div>
+                        <div class="col-md-2 col-3 text-right">
+                            <div class="search_toggle toggle-wrap d-inline-block">
+                                <i class="ti-close"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--search overlay end-->
 
-							<ul class="list-inline mb-0 d-block d-lg-none">
-								<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+    <section class="single-block-wrapper section-padding">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="single-post">
+                        <div class="post-header mb-5 text-center">
+                            <h2 class="post-title mt-2 text-center">
+                                Rizal’s Education from Elementary to College
+                            </h2>
+                            <div class="post-meta text-center">
+                                <span class="text-uppercase font-sm letter-spacing-1 mr-3">by Manankil,Monteclaro,Mallari</span>
+                                <span class="text-uppercase font-sm letter-spacing-1">July 11,2024</span>
+                            </div>
+                            <div class="post-featured-image mt-5">
+                                <img src="images/jose rizal.png" class="img-fluid w-100" alt="featured-image">
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div class="entry-content">
+                                <h2 class="mt-4 mb-3">1861-1872</h2>
+                                <p> Jose Rizal's education started all the way to his mother, Rizal's first instructor was his own mother Teodora Alonso Realonda; she taught him to read, and pray, and even motivated him to compose poetry. during his early years he was also later taught Spanish and Latin by his private tutors. He was also assigned to a private school in Binan which was the start of his formal education.</p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>Ang kabataan ang pag-asa ng bayan.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                                <h2 class="mt-4 mb-3">1872-1877</h2>
+                                <p> At this time Rizal began his secondary schooling at the Ateneo Municipal De Manila. He took philosophy,physics,chemistry, and natural history, he also received top grades in his secondary years. He read books and composed poetry that made him win awards. While in his secondary years he developed longtime hobbies such as drawing, painting, and clay modeling.</p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>Ang pag-ibig sa bayan ay hindi nasusukat sa oras ng kalamidad, kundi sa araw-araw na pagtuturing at pagtupad sa ating mga tungkulin.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr2.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                                <h2 class="mt-4 mb-3">1877-1882</h2>
+                                <p> Rizal eventually graduated from Ateneo Municipal with a degree in land surveying and appriasal while studying philosophy and letters at the University of Santo tomas, which he took medicine as his course. At this period of time he went to europe to study for Licentiate in Philosophy and Letters and Opthamoloy at the Universidad Central de Madrid</p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>Kanya-kanya ng kaalaman ang tao. Ang talino at kakayahan ng tao ay hindi sa lahat ng bagay. Samakatuwid, pakialaman lamang natin yung mga bagay na mayroon tayong kaalaman.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr3.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                                <h2 class="mt-4 mb-3">1882-1884</h2>
+                                <p> After rizal finished his studies in hid medical course, he started to travel around europe and asia. The very first country he visited at that time was spain followed by singapore,ceylon, italy, france, barcelona in spain, paris, madrid and so many more.</p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>Nalilimot ng bawat isa sa inyo na habang napag-iingatan ang isang bayan ang kaniyang wika, napag-iingatan din nito ang katibayan ng kaniyang paglaya, katulad ng pagpapanatili ng isang tao sa kaniyang kasarinlan, upang mapanatili niya ang kaniyang sariling paraan ng pag-iisip. Ang wika ang pag-iisip ng bayan.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr4.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                                <h2 class="mt-4 mb-3">1884-1887</h2>
+                                <p> during this period of time in the Universidad Central de Madrid, where he also studied philosophy and literature. Rizal obtained licentiate in medicine. He had the idea for Noli Me Tangere while he was in madrid. He alsostudied at the University of Paris andfinished his eye-specific training at theUniversity of Heidelberg in 1887. Rizal'spublication of his first book in Berlin alsooccurred in that year as well. </p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>Kapag may mga uban na po akong tulad ng sa inyo at ginugunita ang nakaraan at makita kong gumawa ako alang-alang sa sarili lamang, hindi ginhawa ang magagawa’t nararapat gawin ukol sa bayang nagbigay sa akin ng lahat, ukol sa mga mamamayang tumutulong sa aking mabuhay, kapag nagkagayon po, magiging tinik sa akin ang bawat uban, at sa halip na ikaliwalhati ko’y dapat kong ikahiya.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr5.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                                <h2 class="mt-4 mb-3">1887-1888</h2>
+                                <p> The Sagoths had begun to take notice of his habit of declaiming throughout entire marches. One of them asked him what he was saying—to whom he was talking. The question gave me an idea, so I answered quickly before Perry could say anything.</p>
+                                <blockquote class="text-center">
+                                    <i class="ti-quote-left mr-2"></i>To pursue his profession, Rizal returned tothe Philippines. He was eager to treat hismother's eyes while also treating youngFilipinos and introducing European culture.Afterward, on another trip to Europe, hewent to London to conduct historicalresearch on the Philippines.<i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+                                <div class="post-featured-image mt-5">
+                                    <img src="images/Jr6.jpg" class="img-fluid w-100" alt="featured-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="col-lg-2 col-md-4 col-6">
-					<div class="header-socials-2 text-right d-none d-lg-block">
-						<ul class="list-inline mb-0">
-							<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    <!--footer end-->
 
-	<section class="slider mt-4">
-		<div class="container-fluid">
-			<div class="row no-gutters">
-				<div class="col-lg-12 col-sm-12 col-md-12 slider-wrap">
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="images/slider/slider1.jpg" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Tips for Taking a Long-term Trip</a></h3>
-								<span class=" text-muted  text-capitalize">January 2, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="images/slider/slider2.jpg" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="images/slider/slider3.jpg" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">weekends</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Our Favorite Weekend Getaways</a></h3>
-								<span class=" text-muted  text-capitalize">June 12, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="images/slider/slider2.jpg" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="images/slider/slider3.jpg" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f1.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">June 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f2.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f3.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f4.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
-										Travel</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">March 20, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f5.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f6.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">July 10, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f7.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f8.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">March 12, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f9.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">April 19, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f10.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">February 15, 2019</span>
-
-							</article>
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f11.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
-										Life</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">August 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f12.jpg" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your
-										productivity</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">October 2, 2019</span>
-
-							</article>
-						</div>
-					</div>
-				</div>
-
-				<div class="m-auto">
-					<div class="pagination mt-5 pt-4">
-						<ul class="list-inline ">
-							<li class="list-inline-item"><a href="#" class="active">1</a></li>
-							<li class="list-inline-item"><a href="#">2</a></li>
-							<li class="list-inline-item"><a href="#">3</a></li>
-							<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="footer-2 section-padding gray-bg pb-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="subscribe-footer text-center">
-						<div class="form-group mb-0">
-							<h2 class="mb-3">Subscribe Newsletter</h2>
-							<p class="mb-4">Subscribe my Newsletter for new blog posts , tips and info.
-							<p>
-							<div class="form-group form-row align-items-center mb-0">
-								<div class="col-sm-9">
-									<input type="email" class="form-control" placeholder="Email Address">
-								</div>
-								<div class="col-sm-3">
-									<a href="#" class="btn btn-dark ">Subscribe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-btm mt-5 pt-4 border-top">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline footer-socials-2 text-center">
-							<li class="list-inline-item"><a href="#">Privacy policy</a></li>
-							<li class="list-inline-item"><a href="#">Support</a></li>
-							<li class="list-inline-item"><a href="#">About</a></li>
-							<li class="list-inline-item"><a href="#">Contact</a></li>
-							<li class="list-inline-item"><a href="#">Terms</a></li>
-							<li class="list-inline-item"><a href="#">Category</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="copyright text-center ">
-							@ copyright all reserved to <a href="https://themefisher.com/">themefisher.com</a>-2019 Distribution <a
-								href="https://themewagon.com">ThemeWagon.</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- THEME JAVASCRIPT FILES
-================================================== -->
-	<!-- initialize jQuery Library -->
-	<script src="plugins/jquery/jquery.js"></script>
-	<!-- Bootstrap jQuery -->
-	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugins/bootstrap/js/popper.min.js"></script>
-	<!-- Owl caeousel -->
-	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-	<script src="plugins/slick-carousel/slick.min.js"></script>
-	<script src="plugins/magnific-popup/magnific-popup.js"></script>
-	<!-- Instagram Feed Js -->
-	<script src="plugins/instafeed-js/instafeed.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-	<script src="plugins/google-map/gmap.js"></script>
-	<!-- main js -->
-	<script src="js/custom.js"></script>
-
+    <!-- THEME JAVASCRIPT FILES
+    ================================================== -->
+    <!-- initialize jQuery Library -->
+    <script src="plugins/jquery/jquery.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <!-- Owl carousel -->
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="plugins/slick-carousel/slick.min.js"></script>
+    <script src="plugins/magnific-popup/magnific-popup.js"></script>
+    <!-- Instagram Feed Js -->
+    <script src="plugins/instafeed-js/instafeed.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+    <!-- main js -->
+    <script src="js/custom.js"></script>
 
 </body>
 
